@@ -1,0 +1,188 @@
+body {
+  background-color: rgba(38, 13, 103, 0.088);
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+.header {
+  width: 380px;
+  height: 40vh;
+  background-image: url("image/todo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  /* background: rgb(1, 41, 98); */
+}
+.header {
+  box-shadow: 2px 0px 4px rgba(38, 13, 103, 0.211);
+}
+.myTodo {
+  position: relative;
+  top: 120px;
+  color: #fff;
+  left: 30px;
+}
+.dateTime {
+  position: relative;
+  top: 50px;
+  left: 30px;
+  color: #fff;
+}
+#appTime {
+  font-size: 30px;
+  font-family: "roboto condense", sans-serif;
+}
+
+.clear {
+  float: right;
+  margin: 20px;
+  color: #fff;
+}
+.clear i.re {
+  font-size: 28px;
+  color: lightblue;
+}
+.clear i.re:hover {
+  color: lightblue;
+  transform: rotate(45deg);
+  /* transition: 5s; */
+}
+.fa-refresh {
+  text-shadow: 1px 3px 6px rgb(4, 38, 174);
+}
+.fa-refresh {
+  cursor: pointer;
+}
+
+.content {
+  width: 380px;
+  height: 100vh;
+  max-height: 350px;
+  background-color: rgba(133, 103, 128, 0.517);
+  margin-top: -7px;
+  overflow: auto;
+}
+.content {
+  box-shadow: 2px 0px 4px rgba(38, 13, 103, 0.211);
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.content ul li {
+  list-style: none;
+}
+.items {
+  position: relative;
+  min-height: 45px;
+  height: 45px;
+  width: 380px;
+  top: 20px;
+  border-bottom: 1px #fff solid;
+  padding: 0;
+  margin: 0;
+  margin-left: -40px;
+}
+.text {
+  position: absolute;
+  max-width: 250px;
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  font-size: 1.3em;
+  top: 10px;
+  left: 50px;
+}
+
+.items i.co {
+  font-size: 25px;
+}
+
+.items i.de {
+  font-size: 25px;
+}
+/* Check, Uncheck and Linethrough */
+.fa-check-circle {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  padding: 0;
+  margin: 0;
+  color: rgb(30, 128, 42);
+}
+.fa-check-circle {
+  font-size: 20px;
+}
+
+.fa-circle-thin {
+  position: relative;
+  top: 12px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.ruleLine {
+  text-decoration: line-through;
+  color: rgb(73, 6, 137);
+}
+.fa-circle-thin {
+  cursor: pointer;
+}
+
+.fa-trash {
+  position: relative;
+  float: right;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  right: 20px;
+  top: 7px;
+}
+.fa-trash:hover {
+  color: rgb(241, 11, 61);
+}
+.fa-trash {
+  cursor: pointer;
+}
+
+/* Input session */
+.addItem {
+  position: absolute;
+  width: 380px;
+  height: 50px;
+  top: 530px;
+  background-color: rgb(227, 230, 245);
+  border-top: 1px #fff solid;
+}
+.addItem {
+  box-shadow: 2px 0px 4px rgba(38, 13, 103, 0.211);
+}
+
+.fa-plus-circle {
+  position: relative;
+  color: rgb(62, 127, 255);
+  float: right;
+  right: 20px;
+  top: 5px;
+}
+
+.fa-plus-circle {
+  cursor: pointer;
+}
+
+.addItem i.pl {
+  font-size: 40px;
+}
+.addItem input {
+  position: relative;
+  top: 4px;
+  padding: 12px;
+  width: 290px;
+  background: transparent;
+  border-style: none;
+}
